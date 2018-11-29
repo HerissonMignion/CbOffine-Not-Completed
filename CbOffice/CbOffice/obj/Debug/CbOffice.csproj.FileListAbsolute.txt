@@ -1,0 +1,12 @@
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.csproj.CoreCompileInputs.cache
+D:\VisualStudio2017Project\CbOffice\CbOffice\bin\Debug\CbOffice.exe.config
+D:\VisualStudio2017Project\CbOffice\CbOffice\bin\Debug\CbOffice.exe
+D:\VisualStudio2017Project\CbOffice\CbOffice\bin\Debug\CbOffice.pdb
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.exe
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.pdb
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.pageMain.resources
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.csproj.GenerateResource.cache
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.PowerPoint.pageProgPowerPoint.resources
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.csprojAssemblyReference.cache
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.PowerPoint.Resource.pageResource.resources
+D:\VisualStudio2017Project\CbOffice\CbOffice\obj\Debug\CbOffice.Properties.Resources.resources

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB5668DE-62B8-4BE2-8EF6-D03E156FDA96}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CbOffice</RootNamespace>
+    <AssemblyName>CbOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CbOffice.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icoOffice.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CbButton2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="iPage.cs" />
+    <Compile Include="pageMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pageMain.Designer.cs">
+      <DependentUpon>pageMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PForm.cs" />
+    <Compile Include="PowerPoint\ListProp.cs" />
+    <Compile Include="PowerPoint\oEditContext.cs" />
+    <Compile Include="PowerPoint\oPowerPointProject.cs" />
+    <Compile Include="PowerPoint\oRightClick2.cs" />
+    <Compile Include="PowerPoint\oSlide.cs" />
+    <Compile Include="PowerPoint\oSlideDrawer.cs" />
+    <Compile Include="PowerPoint\pageProgPowerPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerPoint\pageProgPowerPoint.Designer.cs">
+      <DependentUpon>pageProgPowerPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerPoint\Resource\oResource.cs" />
+    <Compile Include="PowerPoint\Resource\pageResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerPoint\Resource\pageResource.Designer.cs">
+      <DependentUpon>pageResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerPoint\Resource\rImage.cs" />
+    <Compile Include="PowerPoint\SlideControl\oSlideControl.cs" />
+    <Compile Include="PowerPoint\SlideControl\scLabel.cs" />
+    <Compile Include="PowerPoint\uioEditerObjectSelectPanel.cs" />
+    <Compile Include="PowerPoint\uioProjectSlideEditer.cs" />
+    <Compile Include="PowerPoint\uioProjectSlideListView.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="pageMain.resx">
+      <DependentUpon>pageMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerPoint\pageProgPowerPoint.resx">
+      <DependentUpon>pageProgPowerPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerPoint\Resource\pageResource.resx">
+      <DependentUpon>pageResource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoOffice.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icoOffice.ico" />
+    <None Include="Resources\icoPowerPoint.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
